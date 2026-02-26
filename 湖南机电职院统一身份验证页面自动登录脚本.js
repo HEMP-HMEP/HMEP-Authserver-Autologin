@@ -243,9 +243,9 @@
     // --- 登录后目标页面逻辑：添加“关闭自动登录”按钮 ---
     function initTargetPage() {
         // 根据当前 URL 判断是哪种页面
-        const isResourceSite = location.href.startsWith('https://webvpn.hnjdzy.edu.cn/') && !location.href.includes('tp_nup') && !location.href.includes('/m/portal');
-        const isResourceSiteMobile = location.href.startsWith('https://webvpn.hnjdzy.edu.cn/') && !location.href.includes('tp_nup') && location.href.includes('/m/portal');
-        const isPortal = location.href.includes('portal.hnjdzy.edu.cn/tp_nup') || location.href.includes('webvpn.hnjdzy.edu.cn/https/77726476706e69737468656265737421e0f85388263c265870028db6811b263101b5d9d5/tp_nup');
+        const isResourceSite = location.href.includes('webvpn.hnjdzy.edu.cn/') && !location.href.includes('tp_nup') && !location.href.includes('/m/portal'); // 我很好奇为什么机电的WebVPN居然不强制走HTTPS协议（之前采用startsWith判断结果发现能走HTTP,我没招了）
+        const isResourceSiteMobile = location.href.includes('webvpn.hnjdzy.edu.cn/') && !location.href.includes('tp_nup') && location.href.includes('/m/portal');
+        const isPortal = location.href.includes('portal.hnjdzy.edu.cn/tp_nup') || location.href.includes('webvpn.hnjdzy.edu.cn/http/77726476706e69737468656265737421e0f85388263c265870028db6811b263101b5d9d5/tp_nup') || location.href.includes('webvpn.hnjdzy.edu.cn/https/77726476706e69737468656265737421e0f85388263c265870028db6811b263101b5d9d5/tp_nup');
 
         if (isResourceSiteMobile) {
             // 手机端资源站点：菜单 div class="wrdvpn-mobile-menu"
@@ -351,7 +351,7 @@
         if (document.querySelector('#un')) initLoginPage();
     }
     // 资源站点或门户页面
-    else if (currentUrl.startsWith('https://webvpn.hnjdzy.edu.cn/') ||
+    else if (currentUrl.includes('webvpn.hnjdzy.edu.cn/') ||
              currentUrl.includes('portal.hnjdzy.edu.cn/tp_nup')) {
         // 等待 DOM 稳定后添加按钮
         window.addEventListener('load', initTargetPage);
