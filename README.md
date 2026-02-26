@@ -40,7 +40,9 @@
 
 3. 在新打开的页面中将仓库中的`湖南机电职院统一身份验证页面自动登录脚本.js`文件内容粘贴至输入框，并保存。
 
-![dbbd852a03440fd6dd5ff52a5dfc1fdc](https://github.com/user-attachments/assets/a17ced51-2d30-4118-b0cb-60ff87f53fd8)![3eec326278be5156043608eb3708408d](https://github.com/user-attachments/assets/62afff62-cdc8-4f13-b61c-e7a551e4bcba)
+![3296f76a7704a0fc0bf1cf367661dd64](https://github.com/user-attachments/assets/85f5bca4-3391-4ceb-86c9-72be0c5a4b73)
+![dbbd852a03440fd6dd5ff52a5dfc1fdc](https://github.com/user-attachments/assets/a17ced51-2d30-4118-b0cb-60ff87f53fd8)![de3d37da9ac0512df9877cdfd04b9537](https://github.com/user-attachments/assets/46729450-bbd8-4a12-af01-461e25144f83)
+
 
 ### 使用说明
 1. 脚本启用后在湖南机电统一身份验证页面会多出“自动登录”选项，输入账号密码后勾选相应选项并点击“登录”便可启用对应功能。（注：需勾选“记住密码”后方可勾选“自动登录”）
