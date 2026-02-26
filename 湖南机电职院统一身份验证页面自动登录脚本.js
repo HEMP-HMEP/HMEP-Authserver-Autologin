@@ -5,7 +5,7 @@
 // @author       raccoon
 // @homepage     https://github.com/HEMP-HMEP/HMEP-Authserver-Autologin
 // @match        *://webvpn.hnjdzy.edu.cn/*/77726476706e69737468656265737421f1e2559434357a467b1ac7a4965f272f0343099d75/authserver/login*
-// @match        *//authserver.hnjdzy.net/authserver/login*
+// @match        *://authserver.hnjdzy.net/authserver/login*
 // @match        *://webvpn.hnjdzy.edu.cn/*/77726476706e69737468656265737421e0f85388263c265870028db6811b263101b5d9d5/tp_nup/*
 // @match        *://portal.hnjdzy.edu.cn/tp_nup/*
 // @match        *://webvpn.hnjdzy.edu.cn/
